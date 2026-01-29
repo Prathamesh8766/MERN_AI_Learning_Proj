@@ -1,0 +1,34 @@
+# =========================
+# Backend ignores
+# =========================
+backend/node_modules/
+backend/package-lock.json
+
+# =========================
+# Frontend (ai-learning-assistant) ignores
+# =========================
+frontend/ai-learning-assistant/node_modules/
+frontend/ai-learning-assistant/package-lock.json
+frontend/ai-learning-assistant/logs/
+frontend/ai-learning-assistant/*.log
+frontend/ai-learning-assistant/npm-debug.log*
+frontend/ai-learning-assistant/yarn-debug.log*
+frontend/ai-learning-assistant/yarn-error.log*
+frontend/ai-learning-assistant/pnpm-debug.log*
+frontend/ai-learning-assistant/lerna-debug.log*
+frontend/ai-learning-assistant/dist/
+frontend/ai-learning-assistant/dist-ssr/
+frontend/ai-learning-assistant/*.local
+
+# =========================
+# Editor / OS files (global)
+# =========================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
