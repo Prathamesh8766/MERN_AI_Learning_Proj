@@ -1,36 +1,33 @@
-name: Build and test
+name: Build and Test
+
 on:
   push:
     branches:
       - master
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: Check Code
-      uses: actions/checkout@v3
+      - name: Check code
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      
+
       - name: Install frontend dependencies
         run: npm install
         working-directory: frontend
 
       - name: Build frontend
         run: npm run build
-        working-directory: frontend/ai-learning-assistant
+        working-directory: frontend
+
 
       - name: Install backend dependencies
         run: npm install
         working-directory: backend
-
-      - name: Build frontend
-        run: npm run build
-        working-directory: 
-      
