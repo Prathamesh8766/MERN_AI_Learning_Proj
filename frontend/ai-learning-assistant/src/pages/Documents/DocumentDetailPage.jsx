@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 
 import documentService from "../../services/documentService";
 import Spinner from "../../components/common/Spinner";
-import Content from "../../components/documents/documentcontent";
+import Content from "../../components/documents/DocumentContent";
 import Chat from "../../components/documents/Chat";
 import SummaryModal from "../../components/documents/SummaryModal";
 import ExplainModal from "../../components/documents/ExplainModal";
