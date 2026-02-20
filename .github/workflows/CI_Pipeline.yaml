@@ -19,14 +19,14 @@ jobs:
         with:
           node-version: 18
 
+   
       - name: Install frontend dependencies
         run: npm install
-        working-directory: frontend
+        working-directory: frontend/ai-learning-assistant
 
       - name: Build frontend
         run: npm run build
-        working-directory: frontend
-
+        working-directory: frontend/ai-learning-assistant
 
       - name: Install backend dependencies
         run: npm install
